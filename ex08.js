@@ -1,6 +1,6 @@
 function sommePairs(tab) {
 	let sum = 0;
-	if (tab !== null) {
+	if (tab.length >= 1) {
 		for (i = 0; i < tab.length; i++) {
 			if (tab[i] % 2 === 0) {
 				sum += tab[i];
@@ -11,3 +11,4 @@ function sommePairs(tab) {
 }
 
 console.log(sommePairs([1, 2, 3, 4])); // Résultat attendu : 6
+console.log(sommePairs([]));
