@@ -1,6 +1,6 @@
 function sommePairs(tab) {
 	let sum = 0;
-	if (tab.length >= 1 && !tab.some(isNaN)) {
+	if (tab.length !== null && isNaN(tab)) {
 		for (i = 0; i < tab.length; i++) {
 			if (tab[i] % 2 === 0) {
 				sum += tab[i];
